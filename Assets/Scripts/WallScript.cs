@@ -30,5 +30,11 @@ public class WallScript : MonoBehaviour
            direction = 1f;
        }
     }
+    //if score gets above 10, speed drops to .5f
+    //if score gets above 15, speed drops to .1f
+    //if score gets above 20, wall is destroyed
+    //where does the code belong?
+    //commit best practices
+    //documentation
 }
 

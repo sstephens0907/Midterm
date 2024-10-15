@@ -12,7 +12,7 @@ public class CoinScript : MonoBehaviour
 
     public float topBoundary = 6f;
     public float bottomBoundary = -6f;
-    // public GameObject Coin;
+   
     void Start()
     {
         velocity = Random.insideUnitCircle.normalized * speed;
