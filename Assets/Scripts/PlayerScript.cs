@@ -101,4 +101,9 @@ public class PlayerScript : MonoBehaviour
     {
         SceneManager.LoadScene("Game Over");
     }
+
+    public int GetScore()
+    {
+        return Score;
+    }
 }

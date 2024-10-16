@@ -9,9 +9,10 @@ public class WallScript : MonoBehaviour
     public float speed = 1.0f;
     public float leftBoundary =-9f;
     public float rightBoundary = 9f;
-
     private float direction = -1f;
-    void Start()
+	public PlayerScript playerScript;
+	public int scoreThreshold = 20;
+	void Start()
     {
         
     }
@@ -29,12 +30,14 @@ public class WallScript : MonoBehaviour
        {
            direction = 1f;
        }
+		scoreCheck();
     }
-    //if score gets above 10, speed drops to .5f
-    //if score gets above 15, speed drops to .1f
-    //if score gets above 20, wall is destroyed
-    //where does the code belong?
-    //commit best practices
-    //documentation
+    void scoreCheck()
+	{
+		if (playerScript.GetScore() >= scoreThreshold)
+			{
+			Destroy(gameObject);
+	}
+	}
 }
 

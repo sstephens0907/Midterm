@@ -472,6 +472,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5465daea84a2bcb43acd34cbcbb9c9ae, type: 3}
+--- !u!114 &3926531873766881998 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5295994739419230840, guid: 5465daea84a2bcb43acd34cbcbb9c9ae, type: 3}
+  m_PrefabInstance: {fileID: 3926531873766881997}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fba00687bf3e5b4ca4c428eba6758ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6861759900474241344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -641,6 +652,8 @@ MonoBehaviour:
   speed: 0.5
   leftBoundary: -7
   rightBoundary: 7
+  playerScript: {fileID: 3926531873766881998}
+  scoreThreshold: 20
 --- !u!1001 &9098013733899075258
 PrefabInstance:
   m_ObjectHideFlags: 0
