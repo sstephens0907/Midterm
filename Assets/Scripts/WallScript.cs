@@ -11,7 +11,7 @@ public class WallScript : MonoBehaviour
     public float rightBoundary = 9f;
     private float direction = -1f;
 	public PlayerScript playerScript;
-	public int scoreThreshold = 20;
+	public int scoreThreshold = 10;
 	void Start()
     {
         
