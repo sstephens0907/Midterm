@@ -407,6 +407,12 @@ MonoBehaviour:
   rightBoundary: 7
   topBoundary: 5
   bottomBoundary: -5
+  Hazard: {fileID: 2120785440}
+  Range: {x: 0, y: 0}
+  scoreThreshold: 10
+  spawnDelay: 5
+  maxHazards: 5
+  playerScript: {fileID: 3926531873766881998}
 --- !u!1001 &3926531873766881997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -504,12 +510,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1658005879004007829, guid: 58900fb4884d022449de569809ac06ab, type: 3}
     - target: {fileID: 884353953833806808, guid: 58900fb4884d022449de569809ac06ab, type: 3}
+      propertyPath: topBoundary
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 884353953833806808, guid: 58900fb4884d022449de569809ac06ab, type: 3}
       propertyPath: leftBoundary
-      value: -7
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 884353953833806808, guid: 58900fb4884d022449de569809ac06ab, type: 3}
       propertyPath: rightBoundary
-      value: 7
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 884353953833806808, guid: 58900fb4884d022449de569809ac06ab, type: 3}
+      propertyPath: bottomBoundary
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 1658005879004007829, guid: 58900fb4884d022449de569809ac06ab, type: 3}
       propertyPath: m_Name
