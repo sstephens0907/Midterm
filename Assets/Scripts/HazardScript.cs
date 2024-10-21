@@ -16,11 +16,9 @@ public class HazardScript : MonoBehaviour
     public Vector2 Range;
     
     public int scoreThreshold = 10;
-    public float spawnDelay = 1f;
+    public float spawnDelay = 5f;
     private float timeSinceLastSpawn = 0f;
     private bool thresholdReached = false;
-    
-
     public int maxHazards = 5;
     private int currentHazardCount = 0;
     public PlayerScript playerScript;

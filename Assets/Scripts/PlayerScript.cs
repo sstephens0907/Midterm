@@ -94,12 +94,21 @@ public class PlayerScript : MonoBehaviour
     public void UpdateScore()
     {
         ScoreText.text = "Score: " + Score;
+        if ((Score) >= 15)
+        {
+            Win();
+        }
     }
 
     //If this function is called, the player character dies. The game goes to a 'Game Over' screen.
     public void Die()
     {
         SceneManager.LoadScene("Game Over");
+    }
+
+    public void Win()
+    {
+        SceneManager.LoadScene("Winning");
     }
 
     public int GetScore()
